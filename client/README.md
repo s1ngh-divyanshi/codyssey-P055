@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 # Collaborative AI Coding & Analytics Platform
 
 A modern web application featuring an in-browser code editor (Monaco), automated code execution via Judge0, Socratic hint generation using Google Gemini 2.5 Flash, and student performance analytics.
@@ -111,6 +109,3 @@ Create a `.env` file in `client/`:
 VITE_API_BASE_URL=http://localhost:5000/api
 
 ```
-
-```
->>>>>>> 501d0f7 (fix: redo README.md for better readability)

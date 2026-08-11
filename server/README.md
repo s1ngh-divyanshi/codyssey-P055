@@ -1,7 +1,3 @@
-
-### Server Directory (`/server/README.md`)
-
-```markdown
 # Codyssey — Backend Server API
 
 This directory contains the Express.js REST API server, MongoDB Mongoose ODM layer, and third-party integrations for Judge0 and Google Gemini API.
@@ -78,7 +74,5 @@ JUDGE0_API_URL=[https://judge0-ce.p.rapidapi.com](https://judge0-ce.p.rapidapi.c
 * **Problems:** `/api/problems` (`GET /`, `GET /:id`, `POST /`)
 * **Execution & Judge0:** `/api/submissions` (`POST /run`, `POST /submit`)
 * **AI Hints:** `/api/ai/hint` (`POST /generate-hint`)
-
-```
 
 ```
