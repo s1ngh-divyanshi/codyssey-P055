@@ -1,6 +1,3 @@
-### Root (`/README.md`)
-
-```markdown
 # Codyssey — AI-Powered Collaborative Coding & Analytics Platform
 
 Codyssey is an interactive learning and code evaluation platform. It features an in-browser code editor, automated remote code execution via Judge0, AI-driven Socratic hint generation using Google Gemini 2.5 Flash, and detailed student analytics dashboards.
@@ -42,10 +39,10 @@ Ensure the following tools are installed on your machine:
 ### Setup Instructions
 
 1. **Clone the Repository:**
+
 ```bash
 git clone [https://github.com/YOUR_GITHUB_USERNAME/codyssey.git](https://github.com/YOUR_GITHUB_USERNAME/codyssey.git)
 cd codyssey
-
 ```
 
 
@@ -60,7 +57,6 @@ cd client && npm install
 # Install server dependencies
 cd ../server && npm install
 cd ..
-
 ```
 
 
@@ -73,13 +69,11 @@ cd ..
 From the root folder, run:
 ```bash
 npm run dev
-
 ```
 
 
 * **Client App:** `http://localhost:5173`
 * **Server API:** `http://localhost:5000`
-
 
 
 ---
@@ -93,5 +87,3 @@ npm run dev
 
 
 * Create a Pull Request (PR) on GitHub before merging into `main`.
-
-```
