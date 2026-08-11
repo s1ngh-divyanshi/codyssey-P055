@@ -59,7 +59,7 @@ Ensure you have the following installed locally before proceeding:
 
 1. **Clone the Repository:**
 ```bash
-git clone [https://github.com/s1ngh-divyanshi/codyssey-P055.git](https://github.com/s1ngh-divyanshi/codyssey-P055.git)
+git clone [https://github.com/s1ngh-divyanshi/codyssey-P055.git]
 cd codyssey-P055
 ```
 
@@ -140,5 +140,3 @@ git push -u origin feature/frontend-monaco-editor
 ```
 
 *Submit a Pull Request (PR) on GitHub for peer review before merging into `main`.*
-
-```
