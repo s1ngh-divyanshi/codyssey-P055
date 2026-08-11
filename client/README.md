@@ -28,8 +28,8 @@ Make sure you have installed:
 =======
 # React + Vite
 =======
+
 ### Client Directory (`/client/README.md`)
->>>>>>> 501d0f7 (fix: redo README.md for better readability)
 
 ```markdown
 # Codyssey — Frontend Client Application
