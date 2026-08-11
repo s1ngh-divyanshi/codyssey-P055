@@ -1,76 +1,76 @@
 # Codyssey — Frontend Client Application
 
-This directory contains the user interface for Codyssey, built with React, Vite, Tailwind CSS, and the Monaco Editor engine.
+[![React](https://img.shields.io/badge/React-v18%2B-blue.svg)](https://react.dev/)
+[![Vite](https://img.shields.io/badge/Vite-v6%2B-646CFF.svg)](https://vitejs.dev/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v4-38bdf8.svg)](https://tailwindcss.com/)
+
+This directory houses the user interface for **Codyssey**, featuring an in-browser VS Code editor engine, real-time Socratic AI hint panels, interactive student analytics, and responsive problem-solving workspaces.
 
 ---
 
 ## 🛠️ Key Libraries & Packages
 
-- **Vite & React 18:** Ultra-fast frontend development build tool and component architecture.
-- **Tailwind CSS v4:** Utility-first styling framework integrated via `@tailwindcss/vite`.
-- `@monaco-editor/react`: VS Code editor integration for in-browser coding.
-- `recharts` / `chart.js` & `react-chartjs-2`: Interactive analytics dashboards.
-- `axios`: HTTP client for backend REST API integration.
-- `lucide-react`: Modern SVG icon collection.
-- `react-router-dom`: Client-side routing.
+- **Vite & React 18:** Ultra-fast local HMR dev server and component-based UI platform.
+- **Tailwind CSS v4:** Utility-first CSS styling integrated via the native `@tailwindcss/vite` plugin.
+- **`@monaco-editor/react`:** Browser-based VS Code editor with full language syntax highlighting and theme control.
+- **`recharts` & `chart.js` / `react-chartjs-2`:** Interactive performance visualization graphs for student analytics.
+- **`axios`:** HTTP client for communicating with the Express REST API backend.
+- **`lucide-react`:** Clean, flexible SVG icon library.
+- **`react-router-dom`:** Dynamic client-side SPA routing.
 
 ---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-
-=======
 ## 📁 Directory Structure
 
 ```text
 client/
-├── public/              # Static assets
+├── public/              # Static assets (favicons, manifest)
 ├── src/
-│   ├── assets/          # SVGs, images
+│   ├── assets/          # Static media files (SVGs, logos)
 │   ├── components/      # Reusable UI components
-│   │   ├── Editor/      # Monaco Editor wrapper and controls
-│   │   └── Analytics/   # Recharts / Chart.js graphs
+│   │   ├── Editor/      # Monaco Editor wrapper, language selector, theme toggle
+│   │   ├── Analytics/   # Recharts / Chart.js performance graphs
+│   │   ├── Navigation/  # Navbar, Sidebar, and Footer
+│   │   └── Common/      # Modals, Loading Spinners, Buttons
 │   ├── context/         # React Context (AuthContext, ThemeContext)
 │   ├── hooks/           # Custom React hooks (e.g., useAuth, useExecution)
-│   ├── pages/           # Views (Dashboard, ProblemList, Workspace)
-│   ├── services/        # Axios API instances & API calls
-│   ├── App.jsx          # App entry routing
-│   ├── main.jsx         # React root initialization
-│   └── index.css        # Tailwind CSS import directives
+│   ├── pages/           # Application route views (Dashboard, ProblemList, Workspace)
+│   ├── services/        # Axios instances and API service endpoints
+│   ├── App.jsx          # Top-level routing layout
+│   ├── main.jsx         # Application entry point
+│   └── index.css        # Tailwind CSS import directives (@import "tailwindcss";)
 ├── .env.example         # Client environment variable template
-├── index.html           # HTML entry point
-├── package.json         # Frontend package manifest
-└── vite.config.js       # Vite configuration with Tailwind plugin
-
+├── index.html           # Single Page Application HTML root
+├── package.json         # Frontend manifest & script shortcuts
+└── vite.config.js       # Vite build configuration with Tailwind plugin
 ```
 
 ---
 
 ## ⚙️ Development Commands
 
-Run all commands inside the `client/` folder:
+Ensure all commands are executed from inside the `client/` directory:
 
 ```bash
-# Install client dependencies
+# 1. Install client dependencies
 npm install
 
-# Start local development server (http://localhost:5173)
+# 2. Start local development server (http://localhost:5173)
 npm run dev
 
-# Build production bundle
+# 3. Build optimized production bundle
 npm run build
 
-# Preview production build locally
+# 4. Preview production build locally
 npm run preview
-
 ```
 
 ---
 
 ## 🔐 Environment Variables
 
-Create a `.env` file in `client/`:
+Create a local `.env` file in the `client/` root directory (refer to `.env.example`):
 
 ```env
 VITE_API_BASE_URL=http://localhost:5000/api
-
 ```
